@@ -22,8 +22,8 @@ def binaryInsertionSort():
         idx = binarySearch(intList[i], 0, i-1)
         t = intList[i]
         #Dịch mảng
-        for i in range(i, idx, -1):
-            intList[i] = intList[i-1]
+        for j in range(i, idx, -1):
+            intList[j] = intList[j-1]
         #Chèn
         intList[idx] = t
 
